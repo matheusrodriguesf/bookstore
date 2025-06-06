@@ -34,7 +34,7 @@ public class CategoriaController {
 
     @GetMapping("/{id}")
     @ResponseStatus(HttpStatus.OK)
-    public ResponseEntity<CategoriaResponse> findById(@PathVariable Long id) {
+    public ResponseEntity<CategoriaResponse> findById(@PathVariable("id") Long id) {
         var categoriaResponse = categoriaService.findById(id);
         return ResponseEntity.ok(categoriaResponse);
     }
