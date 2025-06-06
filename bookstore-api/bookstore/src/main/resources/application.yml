@@ -4,10 +4,10 @@ spring:
   application:
     name: bookstore-service
   datasource:
-     driver-class-name: org.postgresql.Driver
-     url: jdbc:postgresql://localhost:5432/bookstore
-     username: bookstore
-     password: bookstore
+    driver-class-name: org.postgresql.Driver
+    url: jdbc:postgresql://localhost:5432/bookstore
+    username: bookstore
+    password: bookstore
   jpa:
     hibernate:
       ddl-auto: update
@@ -15,7 +15,3 @@ spring:
     properties:
       hibernate:
         dialect: org.hibernate.dialect.PostgreSQLDialect
-  flyway:
-    url: jdbc:postgresql://localhost:5432/bookstore
-    user: bookstore
-    password: bookstore
